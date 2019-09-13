@@ -12,7 +12,7 @@ const App = () => {
   useEffect(() => {
     if (currentPage < 10) {
       axios
-        .get(`https://swapi.co/api/people?page=${currentPage}`)
+        //.get(`https://swapi.co/api/people?page=${currentPage}`)
         .then(response => {
           setCharacters(response.data.results);
         })
