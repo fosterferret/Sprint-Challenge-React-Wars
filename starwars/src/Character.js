@@ -1,6 +1,30 @@
 import React from "react";
 import styled from "styled-components";
 
+const StyledCharacter = styled.div`
+display: flex;
+flex-direction: column;
+  text-align: center;
+  margin: 20px 20px;
+  width: 500px;
+  height: 510px;
+  background: linear-gradient(315deg, #f1dfd1 15%, #f6f0ea 95%), url(./bb8.png);
+  border-radius: 5px;
+  box-shadow: 15px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  transition: 0.4s;
+  padding: 20px;
+
+  h2 {
+    margin: 12px auto;
+  }
+
+  .logo-container {
+    margin: auto 0px;
+    margin-bottom: 0px;
+  }
+`;
+
 const Character = ({
     name,
     height,
