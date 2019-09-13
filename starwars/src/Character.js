@@ -17,6 +17,7 @@ flex-direction: column;
 
   h2 {
     margin: 12px auto;
+    font-size: 2.8rem;
   }
 
   .logo-container {
