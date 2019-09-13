@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import Characters from "./Characters";
+import "./reset.css";
 import "./App.css";
-import './App.css';
+
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
@@ -11,7 +12,7 @@ const App = () => {
   useEffect(() => {
     if (currentPage < 10) {
       axios
-        .get(`https://swapi.co/api/people?page=${currentPage}`)
+        //.get(`https://swapi.co/api/people?page=${currentPage}`)
         .then(response => {
           setCharacters(response.data.results);
         })
