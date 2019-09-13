@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 
 const App = () => {
+  const [characters, setCharacters] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
 
 
   return (
