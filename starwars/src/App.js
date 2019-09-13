@@ -22,10 +22,28 @@ const App = () => {
 
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-    </div>
+    <>
+      <div className="App">
+        <h1 className="Header">STAR WARS CHARACTER CARDS</h1>
+
+        <h3>PAGE {currentPage}</h3>
+
+        <Characters characters={characters} />
+
+        <div className="wrapper">
+          <div
+            className="prev"
+            onClick={() => currentPage === 1? setCurrentPage(1): setCurrentPage(currentPage - 1)}
+          ></div>
+          <h2>PREV / NEXT</h2>
+          <div
+            className="next"
+            onClick={() => currentPage === 10? setCurrentPage(10) : setCurrentPage(currentPage + 1)}
+          ></div>
+        </div>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
