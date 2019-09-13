@@ -28,7 +28,7 @@ const App = () => {
       <div className="App">
         <h1 className="Header">STAR WARS CHARACTER CARDS</h1>
 
-        <h3>PAGE {currentPage}</h3>
+        <h2 className="page-label">PAGE {currentPage}</h2>
 
         <Characters characters={characters} />
 
