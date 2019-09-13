@@ -1,8 +1,127 @@
 .App {
   text-align: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
 }
+
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
 /* write your parent styles in here for your App.js */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 3.9rem;
+  font-weight: 30rem;
+  font-family: 'Days One';
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-family: 'Days One';
+  color: rgb(68, 62, 62);
+  font-size: 48px;
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+p {
+  font-family: 'Jura';
+  font-size: 2rem;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+
+.characters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* .character-container:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+} */
+
+/*button*/
+
+@import url(https://fonts.googleapis.com/css?family=Scada:700,700italic&subset=latin,cyrillic);
+body {
+  font: 14px 'Scada', sans-serif;
+}
+
+.wrapper {
+  margin-top: 20px;
+  position: relative;
+  width: 15%;
+  align-self: center;
+}
+
+.wrapper .prev, .next {
+  cursor: pointer;
+  height: 25px;
+  overflow: hidden;
+  position: absolute;
+  width: 14px;
+  top: 6px;
+}
+
+.wrapper .next {
+  right: 0;
+}
+
+.wrapper .prev:before, .next:before {
+  background-color: black;
+  content: "";
+  height: 17px;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  width: 17px;
+}
+
+.wrapper .next:before {
+  left: auto;
+  right: 5px;
+}
+
+.wrapper .prev:after, .next:after {
+  background-color: #f6f0ea;
+  content: "";
+  height: 17px;
+  left: 8px;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  width: 17px;
+}
+
+.wrapper .next:after {
+  left: auto;
+  right: 8px;
+}
+
+.wrapper h2 {
+  color: #f6f0ea;
+  padding: 0 28px;
+  margin: 0;
+  font-size: 2.5rem;
+  text-shadow: 0px;
+}
+
+.page-label {
+  margin-top: 3rem;
+  font-size: 2.4rem;
+}
