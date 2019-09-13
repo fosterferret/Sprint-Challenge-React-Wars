@@ -9,10 +9,10 @@ test("useEffect performs GET request", () => {
 
   const mockData = "response";
   const url = `https://swapi.co/api/people?page=${currentPage}`;
-  mock.onGet(url).reply(200, mockData);
+  
 
   act(() => {
-    mock.get(url);
+    mock.onGet(url).reply(200, mockData);
   });
 
   expect(mockData.data.results).toBe(initialValue.length > 1);
