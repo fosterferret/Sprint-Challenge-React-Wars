@@ -1,8 +1,193 @@
 .App {
   text-align: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
 }
+
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
 /* write your parent styles in here for your App.js */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 3.9rem;
+  font-weight: 30rem;
+  font-family: 'Days One';
+}
+
+h2 {
+  font-size: 3.1rem;
+  font-family: 'Days One';
+  color: rgb(68, 62, 62);
+  font-size: 48px;
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+p {
+  font-family: 'Jura';
+  font-size: 2rem;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+
+.characters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* .character-container:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+} */
+
+/*button*/
+
+button {
+  width: 130px;
+  height: 40px;
+  /* background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); */
+  background-color: #efecec;
+  background-image: linear-gradient(315deg, #efecec 0%, #f9aba4 74%);
+  /* W3C */
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  border-bottom: 4px solid#f9aba4;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+  font-size: 15px;
+  text-align: left;
+  text-indent: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, .2);
+  cursor: pointer;
+  /* Just for presentation */
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+button:active {
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, .2);
+  top: 1px;
+}
+
+button:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 20px solid #f9aba4;
+  border-bottom: 20px solid #f9aba4;
+  border-left: 16px solid transparent;
+  border-right: 20px solid #f9aba4;
+  position: absolute;
+  opacity: 0.6;
+  right: 0;
+  top: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+/* Button pointing left */
+
+button.back {
+  text-align: right;
+  padding-right: 12px;
+  box-sizing: border-box;
+}
+
+button.back:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 20px solid #f9aba4;
+  border-bottom: 20px solid #f9aba4;
+  border-right: 16px solid transparent;
+  border-left: 20px solid #f9aba4;
+  position: absolute;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Scada:700,700italic&subset=latin,cyrillic);
+body {
+  font: 14px 'Scada', sans-serif;
+}
+
+.wrapper {
+  margin-top: 20px;
+  position: relative;
+  width: 15%;
+  align-self: center;
+}
+
+.wrapper .prev, .next {
+  cursor: pointer;
+  height: 25px;
+  overflow: hidden;
+  position: absolute;
+  width: 14px;
+  top: 6px;
+}
+
+.wrapper .next {
+  right: 0;
+}
+
+.wrapper .prev:before, .next:before {
+  background-color: black;
+  content: "";
+  height: 17px;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  width: 17px;
+}
+
+.wrapper .next:before {
+  left: auto;
+  right: 5px;
+}
+
+.wrapper .prev:after, .next:after {
+  background-color: #f6f0ea;
+  content: "";
+  height: 17px;
+  left: 8px;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  width: 17px;
+}
+
+.wrapper .next:after {
+  left: auto;
+  right: 8px;
+}
+
+.wrapper h2 {
+  color: #f6f0ea;
+  padding: 0 28px;
+  margin: 0;
+  font-size: 2.5rem;
+  text-shadow: 0px;
+}
